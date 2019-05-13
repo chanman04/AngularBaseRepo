@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import Amplify from 'aws-amplify';
-import aws_exports from '../aws-exports';
+//import aws_exports from '../aws-exports';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'base-app';
 
   ngOnInit(){
-    Amplify.configure(aws_exports);
+    //Amplify.configure(aws_exports);
     console.log('Amplify Initialised');
     this.title = "Amplify Initialised";
   }

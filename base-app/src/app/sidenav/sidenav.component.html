@@ -1,0 +1,19 @@
+<div>
+<!-- toolbar HTML-->
+  <mat-toolbar class="toolbar">  
+    <mat-toolbar-row>
+    <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" color="primary">
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+    <span>Base App Dawg</span>  
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<!-- sidenav HTML -->
+<mat-drawer-container class="example-container">
+  <mat-drawer #drawer class="drawer" mode="side" closed>Drawer content</mat-drawer>
+  <mat-drawer-content #main>Main content</mat-drawer-content>
+</mat-drawer-container>
+
+</div>
+
